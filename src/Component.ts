@@ -17,6 +17,7 @@ export default class Component extends UIComponent {
     super.init();
 
     const model = new JSONModel("https://api.corona-zahlen.org/states");
+
     this.setModel(model);
 
     // create the views based on the url/hash

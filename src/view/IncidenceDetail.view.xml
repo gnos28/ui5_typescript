@@ -1,5 +1,5 @@
 <mvc:View displayBlock="true"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m" controllerName="com.myorg.tsexo1.controller.IncidenceDetail">
-    <Page id="incidenceDetailPage" title="tbd" showNavButton="true" navButtonPress=".onNavBack"></Page>
+    <Page id="incidenceDetailPage" title="{incidenceHistory>name}" showNavButton="true" navButtonPress=".onNavBack"></Page>
 </mvc:View>
