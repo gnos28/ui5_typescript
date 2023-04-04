@@ -1,0 +1,14 @@
+{
+  "generator-ui5-ts-app": {
+    "application": "tsexo1",
+    "namespace": "com.myorg",
+    "framework": "OpenUI5",
+    "frameworkVersion": "1.112.0",
+    "author": "gnos28",
+    "tstypes": "@openui5/ts-types-esm",
+    "tstypesVersion": "1.112.0",
+    "appId": "com.myorg.tsexo1",
+    "appURI": "com/myorg/tsexo1",
+    "setupCompleted": true
+  }
+}
