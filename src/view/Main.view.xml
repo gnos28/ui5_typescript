@@ -7,7 +7,7 @@
 	<MessagePage
 		title="{i18n>appTitle}"
 		text="{i18n>appTitle}"
-		icon="sap-icon://accept"
+		icon="sap-icon://accelerated"
 		id="page"
 		description="{i18n>appDescription}">
 		<buttons>
