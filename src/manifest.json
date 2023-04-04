@@ -71,12 +71,22 @@
           "pattern": "",
           "name": "main",
           "target": "main"
+        },
+        {
+          "pattern": "state/{id}",
+          "name": "IncidenceDetailRoute",
+          "target": ["IncidenceDetailTarget"]
         }
       ],
       "targets": {
         "main": {
           "viewId": "main",
           "viewName": "Main"
+        },
+        "IncidenceDetailTarget": {
+          "viewId": "incidenceDetail",
+          "viewName": "IncidenceDetail",
+          "viewLevel": 2
         }
       }
     }

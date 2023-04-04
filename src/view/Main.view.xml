@@ -11,7 +11,7 @@
           <grid:GridBoxLayout/>
         </f:customLayout>
         <f:items>
-          <CustomListItem type="Active">
+          <CustomListItem type="Active" press=".navToIncidenceDetail">
             <HBox justifyContent="SpaceBetween">
               <Title text="{name}" wrapping="true"/>
               <core:Icon src="sap-icon://wounds-doc" size="2.5rem" color="{path: 'weekIncidence', formatter: '.formatIconColor'}"/>
