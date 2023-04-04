@@ -28,3 +28,28 @@ export default class IncidenceDetail extends BaseController {
     });
   }
 }
+
+// TRYING TO HACK THESE MOTHERFUCKING JAVASCRIPT CLASSES !!!!
+
+// class IncidenceDetailClass extends BaseController {}
+
+// const IncidenceDetail = new IncidenceDetailClass("IncidenceDetail");
+
+// IncidenceDetail.onInit = () => {
+//   const model = new JSONModel(
+//     "https://api.corona-zahlen.org/states/history/incidence/100"
+//   );
+//   IncidenceDetail.setModel(model, "incidenceHistory");
+//   IncidenceDetail.getRouter()
+//     .getRoute("IncidenceDetailRoute")
+//     .attachMatched(onRouteMatched);
+// };
+
+// const onRouteMatched = (event: EventWithIDArgument) => {
+//   IncidenceDetail.getView().bindElement({
+//     path: "/data/" + event.getParameter("arguments").id,
+//     model: "incidenceHistory",
+//   });
+// };
+
+// export default IncidenceDetail;
