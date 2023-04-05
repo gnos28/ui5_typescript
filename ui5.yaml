@@ -20,3 +20,9 @@ server:
       extraExts: "xml,json,properties"
       port: 35729
       path: "webapp"
+  - name: ui5-tooling-modules-middleware
+    afterMiddleware: compression
+builder:
+  customTasks:
+  - name: ui5-tooling-modules-task
+    afterTask: replaceVersion
