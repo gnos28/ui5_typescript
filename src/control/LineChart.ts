@@ -51,7 +51,7 @@ export default class LineChart extends Control {
     apiVersion: 2,
     render: (rm: RenderManager, chart: LineChart) => {
       rm.openStart("div", chart);
-      // rm.style("color", chart.getColor());
+      rm.style("color", chart.getColor());
       rm.style("padding", "2em");
       rm.openEnd();
 
