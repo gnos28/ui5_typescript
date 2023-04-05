@@ -8,15 +8,35 @@
         title="{incidenceHistory>name}"
         showNavButton="true"
         navButtonPress=".onNavBack">
+    <Text text="date stylized inside controller" id="text1"/>
     <cc:LineChart
         title="{incidenceHistory>name}"
         color="red"
         records="{incidenceHistory>history}"
         >
     <cc:ChartRecord
-    label="{incidenceHistory>date}"
+    label='{path: "incidenceHistory>date", formatter: ".formatDate"}'
     value="{incidenceHistory>weekIncidence}"
     />
+    </cc:LineChart>
+    <Text text="date stylized directly inside XML"/>
+    <cc:LineChart
+        title="{incidenceHistory>name}"
+        color="red"
+        records="{incidenceHistory>history}"
+        >
+   <cc:ChartRecord
+				label='{
+					path: "incidenceHistory>date",
+					type: "sap.ui.model.type.DateTime",
+					formatOptions: {
+						style: "short",
+						source: {
+							pattern: "yyyy-MM-ddTHH:mm:ss.nnnZ"
+						}
+					}
+				}'
+				value ="{incidenceHistory>weekIncidence}"/>
     </cc:LineChart>
     </Page>
 </mvc:View>

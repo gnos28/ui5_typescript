@@ -22,7 +22,7 @@ export default class LineChart extends Control {
   _getChartData() {
     const aRecords = this.getRecords();
     return {
-      labels: aRecords.map((record) => recordToDate(record)),
+      labels: aRecords.map((record) => record.getLabel()),
       datasets: [
         {
           label: this.getTitle(),
